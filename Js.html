@@ -5,9 +5,8 @@
 </head>
 <body>
 <h1 class = "XYZ" > JS Exam </h1>
-<h2 id="abc" class="xyz"> hello </h2>
 <div>
-Ayon
+Name
 </div>
 <form>
 <input id = "name" type = "text" name="" value ="" onblur="f1()"/><br> <p id = 'msg'></p>
@@ -16,6 +15,10 @@ Ayon
 <script>
 "use strict"
 function f1(){
+if(name == ""){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";}
 
 var name = document.getElementById('name').value;
 
