@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> JS </title>
+</head>
+<body>
+<h1 class = "XYZ" > JS Exam </h1>
+<h2 id="abc" class="xyz"> hello </h2>
+
+<form>
+<input id = "name" type = "text" name="" value ="" onblur="f1()"/><br> <p id = 'msg'></p>
+<input type ="button" name= "btn" value = "click" onclick="f1()">
+</form>
+<script>
+"use strict"
+function f1(){
+var name ="Ayon"
+
+var name = document.getElementById('name').value;
+if (name ==""){
+document.getElementById('msg').innerHTML="null Submission";
+}
+
+document.getElementById('msg').innerHTML= name;
+</script>
+</body>
+</html>
+   
